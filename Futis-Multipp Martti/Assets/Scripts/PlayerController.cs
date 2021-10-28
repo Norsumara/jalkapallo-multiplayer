@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class PlayerController : MonoBehaviour
 {
     CharacterController controller;
@@ -24,6 +25,7 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         controller = GetComponent<CharacterController>();
+
     }
 
     // Update is called once per frame
@@ -31,6 +33,9 @@ public class PlayerController : MonoBehaviour
     {
         CheckIfGrounded();
         Move();
+
+       
+
     }
 
     private void CheckIfGrounded()
